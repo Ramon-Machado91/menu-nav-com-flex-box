@@ -5,13 +5,13 @@
 body{
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9375rem;
     
 }
 
 header{
     width: 100%;
-    height: 350px;
+    height: 21.875rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -24,55 +24,59 @@ header{
 }
 
 .logo{
-    width: 45px;
-    height: 42px;
-    margin-left: 30px;
-    margin-top: 30px;
+    width: 2.8125rem;
+    height: 2.625rem;
+    margin-left: 1.875rem;
+    margin-top: 1.875rem;
 }
 
 h1{
 font-family: Public Sans;
-font-size: 30px;
+font-size: 1.875rem;
 font-weight: 800;
-padding-top: 34px;
-padding-left: 5px;
+padding-top: 2.125rem;
+padding-left: 0.3125rem;
 
 }
 
 ul{
     display: flex;
-    text-align: center;
-    margin: 30px;
+    align-items: center;
+    margin: 1.875rem;
+    padding:10px 5px;
 }
 
 
 a{
     text-decoration: none;
     color: black;
-    width: 127px;
+    width: 7.9375rem;
     height: 39px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a:nth-child(2){
-    background-color: var(--padrão-verde);
-    color: white;
-    width: 55px;
+li{
+    width: auto;
     height: 40px;
-
+    margin: 5px;
 }
 
-
-a:last-child{
+.menu:hover{
     background-color: var(--padrão-verde);
-    border-radius: 10px;
+    
+    
+}
+
+a:hover{
     color: white;
 }
 
-a:nth-child(2):hover,a:last-child:hover{
-    color: black;
+.button a{
+    background-color: var(--padrão-verde);
+    color: white;
+    border-radius: 10px;
 }
 
 @media(max-width:375px){
@@ -93,9 +97,17 @@ a:nth-child(2):hover,a:last-child:hover{
         flex-direction: column;
     }
 
-    li{
-        font-weight: bold;
+    .menu{
+        font-weight: 700;
     }
+    .menu:hover{
+        background-color: var(--padrão-verde);
+    }
+
+    .button{
+        transform: scale(0.8);
+    }
+
     ul{
         display: flex;
         flex-direction: column;
@@ -103,19 +115,7 @@ a:nth-child(2):hover,a:last-child:hover{
         align-items: center;
     }
 
-    a:last-child{
-        transform: scale(0.8);
-        font-weight: 100;
-    }
-
-    a:nth-child(2){
-        transform: scale(1.2);
-        font-weight: 100;
-        
-    }
-    a:nth-child(2):hover,a:last-child:hover{
-        color: black;
-    }
+    
 }
 
 
